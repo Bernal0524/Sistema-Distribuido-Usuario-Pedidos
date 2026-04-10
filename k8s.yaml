@@ -15,6 +15,7 @@ spec:
       containers:
         - name: users
           image: erickbernal05/users-service
+          imagePullPolicy: Never
           ports:
             - containerPort: 3001
 ---
@@ -46,6 +47,7 @@ spec:
       containers:
         - name: orders
           image: erickbernal05/orders-service
+          imagePullPolicy: Never
           ports:
             - containerPort: 3002
 ---
@@ -77,6 +79,7 @@ spec:
       containers:
         - name: api
           image: erickbernal05/api-gateway
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
 ---
